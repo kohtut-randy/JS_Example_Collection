@@ -1,4 +1,11 @@
-let Array = [1,3,2,6,9,1,100,122,122,100,3];
-for(let i =Array.length;i>=0;i--){
-    console.log(Array[i]);
+function ReverseArray(arr){
+    let reverse = [];
+
+    for(i = arr.length - 1 ; i >= 0 ; i--){
+        reverse.push(arr[i]);
+    }
+    return reverse;
 }
+
+const result = ReverseArray(Array);
+console.log(result);
